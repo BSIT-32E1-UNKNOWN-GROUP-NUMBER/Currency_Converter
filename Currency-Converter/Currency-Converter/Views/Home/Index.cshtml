@@ -1,0 +1,68 @@
+﻿<div class="main-container">
+    <div class="currency-container">
+        <div class="box">
+            <h4 class="xrate-text">Exhange Rate</h4>
+            <div class="text-container">
+
+                <label id="resultCurrencySymbol"></label>
+                <h1 class="rate">00.00</h1>
+            </div>
+
+            <form action="">
+                <div class="input-field-container">
+                    <h4 class="amount-text">Amount</h4>
+                    <label id="currencySymbol" for="amount"></label>
+                    <input type="text" id="amount" name="amount" min="1" step="any" class="Amount" />
+                </div>
+            </form>
+            <div class="from-to-text">
+                <h5 class="to">From</h5>
+                <h5 class="to">To</h5>
+            </div>
+            <div class="dropdown-input-container">
+                <select name="" id="fromCurrency">
+                    <option value=""></option>
+                    <option value="PHP" class="img-flag php">PHP</option>
+                    <option value="NGN" class="img-flag ngn">NGN</option>
+                    <option value="EUR" class="img-flag eur">EUR</option>
+                    <option value="GBP" class="img-flag gbp">GBP</option>
+                    <option value="AUD" class="img-flag aud">AUD</option>
+                    <option value="CAD" class="img-flag cad">CAD</option>
+                    <option value="USD" class="img-flag usd">USD</option>
+                </select>
+                <button class="arrow-button">
+                    <span class="arrow">&#8646;</span>
+                </button>
+                <select name="" id="toCurrency">
+                    <option value=""></option>
+                    <option value="USD" class="img-flag usd">USD</option>
+                    <option value="EUR" class="img-flag eur">EUR</option>
+                    <option value="GBP" class="img-flag gbp">GBP</option>
+                    <option value="AUD" class="img-flag aud">AUD</option>
+                    <option value="CAD" class="img-flag cad">CAD</option>
+                    <option value="PHP" class="img-flag php">PHP</option>
+                    <option value="NGN" class="img-flag ngn">NGN</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button id="convertButton" class="convert-btn">CONVERT</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+@* <script src="~/js/fromSymbol.js"></script>
+<script src="~/js/toSymbol.js"></script> *@
+
+<script>
+    $(document).ready(function () {
+        $(".arrow-button").click(function () {
+            var fromCurrency = $("#fromCurrency").val();
+            var toCurrency = $("#toCurrency").val();
+
+            $("#fromCurrency").val(toCurrency).trigger('change');
+            $("#toCurrency").val(fromCurrency).trigger('change');
+        });
+    });
+</script>

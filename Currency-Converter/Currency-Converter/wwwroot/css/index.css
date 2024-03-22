@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(176, 179, 182, 0.749);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.currency-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.box {
+    width: 700px;
+    height: 800px;
+    background-color: rgb(234, 238, 237);
+    border-top: 13px solid rgb(132, 132, 198);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.xrate-text {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    margin-top: 8%;
+}
+
+#resultCurrencySymbol {
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+
+.rate {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2.5%;
+}
+
+select option {
+    background-image: url('../nigeria.jpg');
+}
+
+/* span {
+  content: "\21C6";
+} */
+
+.input-field-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Amount {
+    width: 70%;
+    height: 50px;
+    border: 0.5px solid rgb(205, 197, 197);
+    border-radius: 5px;
+    padding-left: 50px;
+    font-size: 16px;
+    color: #333;
+
+}
+
+.amount-text {
+    margin-left: -60%;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 10%;
+}
+
+.dropdown-input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.from-to-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 47%;
+    margin-left: 16%;
+    margin-top: 10%;
+}
+
+.to {
+    margin-right: 4%;
+}
+
+.from,.to {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+select {
+    width: 27%;
+    height: 50px;
+    border: 1px solid rgb(205, 197, 197);
+    border-radius: 5px;
+    padding-left: 10%;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.arrow {
+    font-size: 2em;
+    font-weight: 600;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.button-container  {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.convert-btn {
+    width: 70%;
+    height: 60px;
+    font-size: 1.3em;
+    font-weight: 600;
+    background-color: rgb(132, 132, 198);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.convert-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#currencySymbol {
+    position: absolute;
+    left: 130px;
+    top: 83%;
+    transform: translateY(-50%);
+}
+
+.arrow-button {
+    border: none;
+    background-color: transparent;
+}
+
+.arrow-button:hover {
+    transform: scale(1.5);
+}
+
+.img-flag {
+    padding-left: 40%; 
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 35px 20px; /* Adjust as needed */
+    margin-left: 10%;
+    font-weight: 500;
+}
+
+.php {
+    background-image: url('../flagimage/ph.jpg');
+}
+
+.usd {
+    background-image: url('../flagimage/usa.jpg');
+}
+
+.ngn {
+    background-image: url('../flagimage/ngn.jpg');
+
+}
+
+.aud {
+    background-image: url('../flagimage/aud.png');
+
+}
+
+.eur {
+    background-image: url('../flagimage/eur.webp');
+}
+
+.cad {
+    background-image: url('../flagimage/cad.jpg');
+
+}
+
+.gbp {
+    background-image: url('../flagimage/gbp.jpg');
+
+}
+
+.select2-container .select2-selection--single {
+    height: 50px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px !important;
+}
+
