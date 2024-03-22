@@ -1,4 +1,4 @@
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function() {
     var currencySymbols = {
         "PHP": "₱",
         "NGN": "₦",
@@ -9,11 +9,10 @@ $(document).ready(function () {
         "USD": "$"
     };
 
-    $("#convertButton").click(function (event) {
+    document.querySelector("#convertButton").addEventListener('click', function (event) {
         event.preventDefault(); 
-        var to = $("#toCurrency").val();
+        var to = document.querySelector("#toCurrency").value;
         var symbol = currencySymbols[to];
-        $("#resultCurrencySymbol").text(symbol);
+        document.querySelector("#resultCurrencySymbol").textContent = symbol;
     });
 });
-
